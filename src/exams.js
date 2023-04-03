@@ -1,4 +1,5 @@
 import months from './months.js'
+import carros from './carros.js'
 
 // Filtra meses
 const filteredMonths = months.filter( (months)=> {
@@ -36,3 +37,9 @@ document.getElementById('main').innerHTML =
     toPrint + '<br> Soma dos dias dos meses selecionados: ' 
     + sumMonthDays.days + '<br> idade humana dos cachorros: '  
     + years + ' '
+
+
+// Lista de carros
+    ListaCarros.forEach((carro) => {
+        console.log(`${carro.marca} ${carro.modelo} (${carro.ano})`);
+      });
